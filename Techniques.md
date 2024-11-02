@@ -115,6 +115,24 @@ from PySide6.QtWidgets import QListWidget--
 9. If installed on a more base class, all it's subclasses' events are filtered
 10. If installed on a base class will be necessary to test widget.type() for relevance
 
+
+## tkinter events vs. PyQt Signals
+
+In general one has to bind an event to any tkinter widget to capture gui events.
+
+PyQt has a number of standard signals (aka events) for the different widgets.
+
+The best example is DoubleClick on a list box item. In PyQt this is a standard signal.
+In tkinter one has to bind a doubleclick event definition to the tkinter list box widget.
+
+Where there is no standard PyQt event you have to go create and bind a filter object to the widget and capture the desired QEvent
+This is similar to the tkinter event bind protocol.
+
+In all cases, the tkinter event and the PyQt filter must be connected to a handler for the event.
+
+Where existing tkinter code uses a lot of F-keys as shortcuts, these must be bound using PyQt filter objects.
+The end result is equivalent functionality with F-keys acting as shortcut keys.
+
 ## QtCreator/QtDesigner Notes
 
 When QtCreator creates the .py file using Pyuic6 it uses PyQt6 imports; these must all be changed to PySide6
