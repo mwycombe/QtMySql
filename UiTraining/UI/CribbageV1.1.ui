@@ -56,7 +56,7 @@
      <property name="lineWidth">
       <number>2</number>
      </property>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -144,7 +144,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -255,7 +255,7 @@ font: 700 11pt &quot;Segoe UI&quot;;</string>
      <property name="lineWidth">
       <number>2</number>
      </property>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -820,7 +820,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
         <number>2</number>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1622,7 +1622,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <string notr="true">background: rgb(236, 236, 236)</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>200</x>
@@ -1782,7 +1782,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
         <string>Run Reports</string>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>20</x>

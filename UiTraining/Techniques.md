@@ -66,9 +66,9 @@ If it a bidirectional synchronous relationship.
 8. def my_slot(self, data):
 9.    print ('Slot got ' + data)
 
-The above code snippet emulats tkinter contol variables and chains events together
+The above code snippet emulates tkinter contol variables and chains events together
 1. Define the entry field where changes will be made
-2. Create a StringVar with the strValueChange and strValueRead signals
+2. Create a StringVar with the strValueChanged and strValueRead signals
 3. Define a function to be executed when return is pressed on EntryField
 4. Set the value of the entryInput property variable
 5. Connect the EntryField pre-defined signal to the returnPressed function

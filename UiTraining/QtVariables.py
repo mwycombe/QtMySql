@@ -76,6 +76,7 @@ class Ui_MainWindow(object):
         # reset the signal field label
         self.EntryFieldLabel.setText('Signal Field Label')
 
+    @QtCore.Slot()
     def my_slot(self, data):
         self.EntryFieldLabel.setText(data)
 
@@ -96,7 +97,7 @@ class Ui_MainWindow(object):
         self.backButton.setText(_translate("MainWindow", "Change Button"))
 
         self.label.setText(_translate("MainWindow", "Button resets entry field label"))
-        self.label_2.setText(_translate("MainWindow", "Entering data into field will alter will alter Signal Entry Field. Pressing the button will put data into the EntryField from the button clicked event."))
+        self.label_2.setText(_translate("MainWindow", "Entering data into field will alter Signal Entry Field. Pressing the button will put data into the EntryField from the button clicked event."))
 
 
 class StrVar(QObject):
@@ -118,9 +119,6 @@ class StrVar(QObject):
             self._my_value = value
             self.strValueChanged.emit(value)
 
-
-
-
     # ppValSignal = Signal(str)   # this is my signal
     #
     # def emit_signal(self):
@@ -140,7 +138,6 @@ class StrVar(QObject):
     #     print('Received signal changed')
     #
     # pp = Property(str, readPP, setPP, notify=emit_signal)
-
 # class MyObject(QObject):
 #     def __init__ (self):
 #         super().__init__()

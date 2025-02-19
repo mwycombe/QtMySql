@@ -25,9 +25,9 @@ class MainWindow(QMainWindow):
 class entryFieldVar():
 
 
-app = QApplication(sys.argv)
+    app = QApplication(sys.argv)
 
-window = MainWindow()
-window.show()
+    window = MainWindow()
+    window.show()
 
-app.exec()
+    app.exec()

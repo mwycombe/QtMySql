@@ -13,7 +13,7 @@ class StringVar(QObject):
 
     @Property(str)
     def myValue(self):
-        self.strValueRead(_my_value)
+        self.strValueRead.emit(self._my_value)
         return self._my_value
 
     @myValue.setter

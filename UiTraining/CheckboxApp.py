@@ -24,7 +24,7 @@ class MainWindow(QMainWindow):
         print(state == Qt.CheckState.Checked.value)
         print(state)
 
-
+j
 app = QApplication(sys.argv)
 
 window = MainWindow()
